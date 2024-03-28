@@ -129,9 +129,9 @@ box_text_top_5_likes_given = "Top 10%  in Likes Given:\n\n"
 for rank, (user, likes_given) in enumerate(top_5_likes_given, start=1):
     box_text_top_5_likes_given += f"{rank}. {user}: {likes_given} likes given\n"
 
-# Prepare the text for the box including top 5 quotes (most liked) and their users
+# Prepare the text for the box including top 9 quotes (most liked) and their users
 top_5_quotes = list(sorted_max_likes.items())[:9]
-box_text_top_5_quotes = "Top 5 Most Liked Quotes:\n\n"
+box_text_top_5_quotes = "Top 9 Most Liked Quotes:\n\n"
 for rank, (user_id, max_likes) in enumerate(top_5_quotes, start=1):
     user_name = user_id_to_name.get(user_id, user_id)
     box_text_top_5_quotes += f"{rank}. {user_name}, {max_likes} likes: \n"
@@ -234,7 +234,7 @@ plt.title('Delta Quotes Analysis')
 plt.ylim(3.5, None) # Set the lower limit of the vertical axis
 plt.xticks(ticks=np.arange(len(sorted_average_likes_per_post_filtered)), labels=sorted_average_likes_per_post_filtered.keys(), rotation=90, ha='center', fontsize=7.3)
 plt.tight_layout()
-plt.savefig('DeltaQuotesVisualized.png', dpi=300)  
+plt.savefig('DeltaQuotesVisualized.png', dpi=300) 
 plt.show()
 
 
