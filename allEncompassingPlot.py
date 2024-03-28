@@ -5,7 +5,7 @@ import matplotlib.patches as mpatches
 import matplotlib.colors as mcolors
 
 # Load JSON data about the group members
-with open('C:\\Users\\jdog1\\OneDrive\\Documents\\Spring2024\\Data Science Projects\\Delta Quotes Analysis\\Exported GM chat Data\\conversation.json', 'r', encoding='utf-8') as file:
+with open('FILE PATH OF conversation.json', 'r', encoding='utf-8') as file:
     group_data = json.load(file)
 
 # Create a mapping from user IDs to names
@@ -13,19 +13,12 @@ user_id_to_name = {member['user_id']: member['name'] for member in group_data['m
 
 # Manually add missing user IDs and names to the user_id_to_name dictionary
 user_id_to_name.update({
-    '94842236': 'Suhas G',
-    '58304457': 'Charlie Breen',
-    '85801105': 'Jack Kirkhorn',
-    '61294173': 'Will Gawrylowicz',
-    '22421689': 'Austin Hanley',
-    '39577603': 'Adity Kannoth',
-    '27270670': 'Alex Prince',
-    '32621779': 'Bart Turney',
-    '61977517': 'Luca Finkbeiner'
+    '12345678': 'John Doe', #example
+    '23456789': 'Average Joe', #example2
 })
 
 # Load JSON data from message.json
-with open('C:\\Users\\jdog1\\OneDrive\\Documents\\Spring2024\\Data Science Projects\\Delta Quotes Analysis\\Exported GM chat Data\\message.json', 'r', encoding='utf-8') as file:
+with open('FILE PATH OF message.json', 'r', encoding='utf-8') as file:
     message_data = json.load(file)
 
 # Initialize dictionaries
@@ -91,7 +84,6 @@ min_posts_90 = min(sorted_posts_count.values())  # Minimum value for the lower 9
 max_posts_90 = np.percentile(list(sorted_posts_count.values()), 90)  # 90th percentile for the lower 90%
 norm_90 = mcolors.Normalize(vmin=min_posts_90, vmax=max_posts_90)
 cmap_90 = plt.cm.get_cmap('viridis_r', lut=None)
-
 
 # Plot the bar graph
 plt.figure(figsize=(13, 7))
@@ -160,8 +152,8 @@ for user_id in user_id_to_name.keys():
     top_10_likes_sum[user_name] = sum(len(message.get('favorited_by', [])) for message in sorted_messages[:10])
 
 #GOAT
-# Define the user IDs of the selected users
-selected_users = ['44456328', '42008056', '41813875']
+# Define the user IDs of the selected users. Manually select the top three, or however many you want, you think deserve to be in the GOAT conversation
+selected_users = ['12345678', '23456789', '34567891']
 
 # Initialize the GOAT box text
 goat_box_text = "Delta Quotes GOATs\n\n"
@@ -200,17 +192,10 @@ for rank, user_id in enumerate(selected_users, start=1):
     goat_box_text += f"   Likes Given: {total_likes_given}\n"
     goat_box_text += f"   Top 3 Posts: {', '.join(map(str, user_best_posts_likes))}\n"
     goat_box_text += f"   Top 10 Posts Sum: {top_10_likes}\n\n"
-goat_box_text += "NBA Most Similar Goats:\n"
+goat_box_text += "NBA Most Similar Goats:\n"  #Used chatGPT to list a few similar NBA Goats and I chose from there
 goat_box_text += "1. Lebron \n"
 goat_box_text += "2. Jordan \n"
 goat_box_text += "3. Kareem \n"
-
-
-
-# Add the GOAT conversation box to the plot
-plt.text(0.05, .7, goat_box_text, transform=plt.gca().transAxes, fontsize=5.6, 
-         verticalalignment='top', bbox=dict(facecolor='white', alpha=0.5, edgecolor='black'))
-
 
 # Add the box with text to the plot
 plt.text(0.05, 0.95, box_text, transform=plt.gca().transAxes, fontsize=6,
@@ -223,6 +208,9 @@ plt.text(.29, 0.95, box_text_top_5_likes_given, transform=plt.gca().transAxes, f
 plt.text(0.48, .95, box_text_top_5_quotes, transform=plt.gca().transAxes, fontsize=6, 
          verticalalignment='top', bbox=dict(facecolor='white', alpha=0.5, edgecolor='black'))
 
+# Add the GOAT conversation box to the plot
+plt.text(0.05, .7, goat_box_text, transform=plt.gca().transAxes, fontsize=5.6, 
+         verticalalignment='top', bbox=dict(facecolor='white', alpha=0.5, edgecolor='black'))
 
 # Add labels to bars
 def autolabel(bars):
@@ -240,7 +228,6 @@ def autolabel(bars):
                              ha='center', va='bottom', fontsize=4.1
                              )
 autolabel(bars)
-
 plt.xlabel('Users')
 plt.ylabel('Average Number of Likes Per Post')
 plt.title('Delta Quotes Analysis')
