@@ -2,9 +2,11 @@ This is code to provide both basic and a more in depth data visualization from a
 
 What each file does:
 
-allEncompassingPlot.py will plot a single very data filled, comprehensive color coated bar graph with additional boxes of top user stats and 'GOAT' conversation for the 3 users with the best overall stats. 
+allEncompassingPlot.py:
+Plots a single very data filled, comprehensive color coated bar graph with additional boxes of top user stats and 'GOAT' conversation for the 3 users with the best overall stats. 
 
-specificStats.py will plot 5 separate graphs, all sorted from low -> high, left -> right:
+specificStats.py:
+Will plot 5 separate graphs, all sorted from low -> high, left -> right:
 - Number of posts 
 - Number of likes given
 - Number of likes received
