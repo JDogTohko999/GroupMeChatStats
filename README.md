@@ -5,9 +5,9 @@ What each file does:
 allEncompassingPlot.py will plot a single very data filled, comprehensive color coated bar graph with additional boxes of top user stats and 'GOAT' conversation for the 3 users with the best overall stats. 
 
 specificStats.py will plot 5 separate graphs, all sorted from low -> high, left -> right:
-- # of posts 
-- # of likes given
-- # of likes received
+- Number of posts 
+- Number of likes given
+- Number of likes received
 - avg likes/post for infrequent posters (<10 posts)
 - avg likes/post for frequent posters (>10 posts).
   
