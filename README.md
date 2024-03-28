@@ -20,3 +20,10 @@ sandBox was just for me to play around with things.
 usingConv&Every was my first attempt at cleaning the data with the conversation.json and everybody.json files that the groupme export provides. The data was easier to clean in those jsons, but it was insufficient. allEncompassingPlot uses message.json which proved to be way better despite being harder to clean.
 
 I just added the folder: 'Plot Gallery' to provide examples of each kind of plot.
+
+This project definitely could be improved in a few areas: 
+- Using kernels for individual plots so you dont deal with multiple plots every time you run
+- I had to manually input some IDs that for some reason weren't recognized
+- I manually chose GOAT contenders, could have some equation to quantitatively figure that out
+- Using more advanced plots to include more data in a more visually aesthetic way
+- Make allEncompassingPlot plot more understandable. It makes sense, just kind of hard to follow for first time viewers, mostly to do with the top 10% situation.
