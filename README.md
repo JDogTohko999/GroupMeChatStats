@@ -1,4 +1,4 @@
-This is code to provide both basic and a more in depth data visualization from a GroupMe export. Likes is the variable that is most focused on. 
+This is code to provide both basic and a more in depth data visualization from a GroupMe export. Likes being the most explored variable. 
 
 What each file does:
 
