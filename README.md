@@ -25,8 +25,7 @@ Step 1 : Groupme Export
    j - Unzip that folder and try to remember where you put it!
    
 
-
-Step 2 : Using my code
+Step 2 : Using 
 
     a - Clone the repo and get the few dependencies needed (sry to the 5th grader, i got lazy)
     
