@@ -103,6 +103,8 @@ def run(conversation_path, message_path):
     plt.title('Average Likes Per Post')
     plt.xticks(rotation=90, ha='right', fontsize=8)
     plt.tight_layout()
+    timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    plt.text(0.02, 0.97, f"Generated on: {timestamp}", transform=plt.gca().transAxes, fontsize=6, color='gray', ha='left', va='bottom')
     plt.show()
 
 if __name__ == "__main__":

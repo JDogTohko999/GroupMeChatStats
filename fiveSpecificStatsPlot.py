@@ -95,6 +95,9 @@ def run(conversation_path, message_path):
     autolabel(bars)
     plt.xticks(rotation=90, ha='right')
     plt.tight_layout()
+    timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    plt.text(0.02, 0.97, f"Generated on: {timestamp}", transform=plt.gca().transAxes, fontsize=6, color='gray', ha='left', va='bottom')
+
     plt.show()
 
     # NUMBER OF LIKES GIVEN
@@ -127,6 +130,8 @@ def run(conversation_path, message_path):
     autolabel(bars, total_xticks)
     plt.xticks(rotation=90, ha='right', fontsize=8)
     plt.tight_layout()
+    timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    plt.text(0.02, 0.97, f"Generated on: {timestamp}", transform=plt.gca().transAxes, fontsize=6, color='gray', ha='left', va='bottom')
     plt.show()
 
     # NUMBER OF LIKES RECEIVED
@@ -159,6 +164,8 @@ def run(conversation_path, message_path):
     autolabel(bars, total_xticks)
     plt.xticks(rotation=90, ha='right', fontsize=8)
     plt.tight_layout()
+    timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    plt.text(0.02, 0.97, f"Generated on: {timestamp}", transform=plt.gca().transAxes, fontsize=6, color='gray', ha='left', va='bottom')
     plt.show()
 
 
@@ -186,6 +193,8 @@ def run(conversation_path, message_path):
             height_prev = height
     autolabel(infrequent_bars)
     plt.tight_layout()
+    timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    plt.text(0.02, 0.97, f"Generated on: {timestamp}", transform=plt.gca().transAxes, fontsize=6, color='gray', ha='left', va='bottom')
     plt.show()
 
     # Frequent Quoters (>10)
@@ -201,6 +210,9 @@ def run(conversation_path, message_path):
     # Function to label only the new heights
     autolabel(frequent_bars)
     plt.tight_layout()
+    timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    plt.text(0.02, 0.97, f"Generated on: {timestamp}", transform=plt.gca().transAxes, fontsize=6, color='gray', ha='left', va='bottom')
+
     plt.show()
 
 if __name__ == "__main__":
