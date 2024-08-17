@@ -2,7 +2,7 @@
 
 **How to run it (instructions for a 5th grader):**
 
-<u>Step 1 : Groupme Export</u>
+Step 1 : Groupme Export
 
    a - Log into your GroupMe on a computer
    
@@ -25,7 +25,7 @@
    j - Unzip that folder and try to remember where you put it!
 
 
-<u>Step 2 : Using my code</u>
+Step 2 : Using my code
 
    a - Clone the repo and get the few dependencies needed (sry to the 5th grader, i got lazy)
     
