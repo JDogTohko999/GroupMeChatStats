@@ -1,8 +1,8 @@
-This is code to provide both basic and a more in depth data visualization from a GroupMe export. Likes being the most explored variable. 
+**This is code to provide both basic and a more in depth data visualization from a GroupMe export. Likes being the most explored variable.**
 
-How to run it (instructions for a 5th grader):
+**How to run it (instructions for a 5th grader):**
 
-Step 1 : Groupme Export
+<u>Step 1 : Groupme Export</u>
 
    a - Log into your GroupMe on a computer
    
@@ -25,7 +25,7 @@ Step 1 : Groupme Export
    j - Unzip that folder and try to remember where you put it!
 
 
-Step 2 : Using my code
+<u>Step 2 : Using my code</u>
 
    a - Clone the repo and get the few dependencies needed (sry to the 5th grader, i got lazy)
     
@@ -39,7 +39,7 @@ Step 2 : Using my code
     
 --------------------------------------------------------------------------------------------------------------------------
 
-What each plot does:
+**What each plot does:**
 
 allEncompassingPlot.py:
 Plots a single very data filled, comprehensive color coated bar graph with additional boxes of top user stats and 'GOAT' conversation for the 3 users with the best overall stats. Also, saves the png for you.
