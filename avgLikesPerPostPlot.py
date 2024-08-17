@@ -1,7 +1,6 @@
 import json
 import numpy as np
 import matplotlib.pyplot as plt
-import matplotlib.patches as mpatches
 import matplotlib.colors as mcolors
 from datetime import datetime
 import sys
