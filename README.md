@@ -13,11 +13,10 @@ Will plot 5 separate graphs, all sorted from low -> high, left -> right:
 - avg likes/post for infrequent posters (<10 posts)
 - avg likes/post for frequent posters (>10 posts).
   
-The other files are unimportant, but I just didn't feel the need to delete them, maybe they're useful in some way. 
+The other files are unimportant, but I just didn't feel the need to delete them (yet), maybe they're useful in some way. 
 avgLikesPerPost plots... surprise surprise: avg likes per post.
 Names 2IDs prints names and their IDs. 
-sandBox was just for me to play around with things.
-usingConv&Every was my first attempt at cleaning the data with the conversation.json and everybody.json files that the groupme export provides. The data was easier to clean in those jsons, but it was insufficient. allEncompassingPlot uses message.json which proved to be way better despite being harder to clean.
+allEncompassingPlot uses message.json which proved to be way better despite being harder to clean.
 
 I just added the folder: 'Plot Gallery' to provide examples of each kind of plot.
 
