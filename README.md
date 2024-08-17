@@ -37,7 +37,7 @@ Step 2 : Using my code
     
    e - Select which of the plots you want. Read more below to see what each of the 3 is, or just run it and see for yourself.
     
-------------------------------------------------------------------------------------------------------------------------------------
+=============================================================================================================================
 
 What each plot does:
 
