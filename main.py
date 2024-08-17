@@ -27,7 +27,7 @@ def find_file(start_dir, file_name):
 
 def run_plot():
     if not (conversation_path and message_path):
-        messagebox.showerror("Error", "No directory selected or paths not found.")
+        messagebox.showerror("Error", "Woah there pal, you gotta hit that big 'Browse' button up there and select the folder... like it says to")
         return
 
     plot_type = plot_selection.get()
@@ -35,9 +35,9 @@ def run_plot():
         if plot_type == "All Encompassing Plot":
             subprocess.run(['python', 'allEncompassingPlot.py', conversation_path, message_path])
         elif plot_type == "Average Likes Per Post":
-            subprocess.run(['python', 'avgLikesPerPost.py', conversation_path, message_path])
+            subprocess.run(['python', 'avgLikesPerPostPlot.py', conversation_path, message_path])
         elif plot_type == "Specific Stats":
-            subprocess.run(['python', 'specificStats.py', conversation_path, message_path])
+            subprocess.run(['python', 'fiveSpecificStatsPlot.py', conversation_path, message_path])
         else:
             messagebox.showerror("Error", "u gotta select a plot. try again")
     else:
@@ -51,9 +51,9 @@ def create_gui():
     message_path = None
     
     root = tk.Tk()
-    root.title("ha made u look (and widen the window jeeeeeez im in your head)                               ok stop. you went too far")
+    root.title("haha made u look (and widen the window jeeeeeeeeeeeeeeeeeeeeez im in your head)                                      ok stop. you went too far")
     
-    tk.Label(root, text="Select the Unzipped Export GroupMe Folder (should be a bunch of numbers or smtn)", padx=50, pady=10).pack(pady=10)
+    tk.Label(root, text="Select GroupMe Export \n(should be a bunch of #s or smtn)", padx=50, pady=10).pack(pady=10)
     
     tk.Button(root, text="Browse", command=select_directory, padx=50, pady=15).pack(pady=5)
     
