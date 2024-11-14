@@ -19,6 +19,16 @@ def run(conversation_path, message_path):
     user_id_to_name.update({
         '12345678': 'John Doe', #example
         '23456789': 'Average Joe', #example2
+        '94842236': 'Suhas G',
+        '58304457': 'Charlie Breen',
+        '85801105': 'Jack Kirkhorn',
+        '61294173': 'Will Gawrylowicz',
+        '22421689': 'Austin Hanley',
+        '39577603': 'Adity Kannoth',
+        '27270670': 'Alex Prince',
+        '32621779': 'Bart Turney',
+        '61977517': 'Luca Finkbeiner'
+
     })
 
     # Initialize dictionaries
