@@ -27,8 +27,9 @@ def run(conversation_path, message_path):
         '39577603': 'Adity Kannoth',
         '27270670': 'Alex Prince',
         '32621779': 'Bart Turney',
-        '61977517': 'Luca Finkbeiner'
-
+        '61977517': 'Luca Finkbeiner',
+        '34525848': 'Brian Brennan', 
+        '51279945': 'Ben Dabich'
     })
 
     # Initialize dictionaries
