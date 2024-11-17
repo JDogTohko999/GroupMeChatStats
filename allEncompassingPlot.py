@@ -220,7 +220,7 @@ def run(conversation_path, message_path):
             verticalalignment='top', bbox=dict(facecolor='white', alpha=0.5, edgecolor='black'))
 
     # Add the GOAT conversation box to the plot
-    plt.text(0.05, .7, goat_box_text, transform=plt.gca().transAxes, fontsize=5.6, 
+    plt.text(0.05, .68, goat_box_text, transform=plt.gca().transAxes, fontsize=5.6, 
             verticalalignment='top', bbox=dict(facecolor='white', alpha=0.5, edgecolor='black'))
 
     # Add labels to bars

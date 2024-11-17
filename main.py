@@ -33,7 +33,7 @@ def run_plot():
     plot_type = plot_selection.get()
     if plot_type:
         if plot_type == "All Encompassing Plot":
-            subprocess.run(['python', 'allEncompassingPlot.py', conversation_path, message_path])
+            subprocess.run(['python', 'allEncompassingPlotWGoats.py', conversation_path, message_path])
         elif plot_type == "Average Likes Per Post":
             subprocess.run(['python', 'avgLikesPerPostPlot.py', conversation_path, message_path])
         elif plot_type == "Specific Stats":
